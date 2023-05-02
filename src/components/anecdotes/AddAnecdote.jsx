@@ -22,19 +22,19 @@ const CreateAnecdote = () => {
   const [author, setAuthor] = useState("");
   const [info, setInfo] = useState("");
 
+  const anecdoteId = Math.round(Math.random() * 10000);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.addNew({
+    const newAnecdoteObject = {
       content,
       author,
       info,
       votes: 0,
-    });
-
-    const addNew = (anecdote) => {
-      anecdote.id = Math.round(Math.random() * 10000);
-      setAnecdotes(anecdotes.concat(anecdote));
+      id: anecdoteId,
     };
+
+    setAnecdotes(anecdotes.concat(newAnecdoteObject));
   };
 
   return (
