@@ -1,0 +1,19 @@
+.anecdote-list-wrap {
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.list {
+  list-style-type: none;
+  margin-right: 20px;
+  font-weight: 600;
+}

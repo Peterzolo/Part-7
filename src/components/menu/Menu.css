@@ -1,0 +1,17 @@
+.menu-wrap {
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: #030852;
+  font-size: 18px;
+}
+
+.menu-item {
+}
+
+.item {
+  text-decoration: none;
+  color: #002c8c;
+  font-weight: 800;
+}

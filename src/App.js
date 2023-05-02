@@ -5,12 +5,13 @@ import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
 import CreateAnecdote from "./components/anecdotes/AddAnecdote";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "../src/App.css";
 
 const App = () => {
   const [notification, setNotification] = useState("");
 
   return (
-    <div>
+    <div className="container">
       <h1>Software anecdotes</h1>
       <Router>
         <Menu />
