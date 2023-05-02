@@ -6,6 +6,7 @@ import Menu from "./components/menu/Menu";
 import CreateAnecdote from "./components/anecdotes/AddAnecdote";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../src/App.css";
+import SingleAnecdote from "./components/anecdotes/SingleAnecdote";
 
 const App = () => {
   const [notification, setNotification] = useState("");
@@ -17,8 +18,9 @@ const App = () => {
         <Menu />
         <Routes>
           <Route path="/" element={<AnecdoteList />} />
+          <Route path="/:id" element={<SingleAnecdote />} />
           <Route path="/about" element={<About />} />
-          <Route path="/" element={<CreateAnecdote />} />
+          <Route path="/create" element={<CreateAnecdote />} />
         </Routes>
         <Footer />
       </Router>

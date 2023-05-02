@@ -39,33 +39,38 @@ const CreateAnecdote = () => {
 
   return (
     <div>
-      <h2>create a new anecdote</h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className="title">create a new anecdote</h2>
+      <form onSubmit={handleSubmit} className="form-wrap">
         <div>
-          content
           <input
+            className="form-input"
             name="content"
+            placeholder="Content ..."
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
         </div>
         <div>
-          author
           <input
+            className="form-input"
             name="author"
+            placeholder="Author ..."
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
         <div>
-          url for more info
           <input
+            className="form-input"
             name="info"
+            placeholder="Url for more info ...."
             value={info}
             onChange={(e) => setInfo(e.target.value)}
           />
         </div>
-        <button>create</button>
+        <button type="submit" className="create-btn">
+          Create
+        </button>
       </form>
     </div>
   );
