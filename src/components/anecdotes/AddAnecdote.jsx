@@ -9,6 +9,7 @@ const CreateAnecdote = () => {
   const content = useField("");
   const author = useField("");
   const info = useField("");
+  const reset = useField("");
 
   const navigate = useNavigate();
   const [notificationMessage, setNotificationMessage] = useState(null);
@@ -43,6 +44,13 @@ const CreateAnecdote = () => {
       setNotificationType(null);
       navigate("/");
     }, 3000);
+  };
+
+  const handleReset = (e) => {
+    e.preventDefault();
+    content.reset();
+    author.reset();
+    info.reset();
   };
 
   return (
@@ -80,9 +88,14 @@ const CreateAnecdote = () => {
             onChange={info.onChange}
           />
         </div>
-        <button type="submit" className="create-btn">
-          Create
-        </button>
+        <div className="btn-wrap">
+          <button type="submit" className="create-btn">
+            Create
+          </button>
+          <button type="submit" className="reset-btn" onClick={handleReset}>
+            Clear
+          </button>
+        </div>
       </form>
     </div>
   );

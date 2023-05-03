@@ -45,12 +45,28 @@
 .create-btn {
   padding: 10px;
   margin-top: 10px;
-  width: 420px;
   margin-left: 30px;
   border: transparent;
   background-color: orange;
   border-radius: 5px;
   color: white;
+  width: 50%;
+}
+.reset-btn {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border: transparent;
+  background-color: rgb(255, 0, 68);
+  border-radius: 5px;
+  color: white;
+  width: 50%;
+}
+
+.btn-wrap {
+  display: flex;
+  width: 420px;
+  justify-content: space-around;
 }
 
 .signle-anecdote-wrap {
