@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-
-import "../../components/anecdotes/Anecdote.css";
 import { getAllAnecdotes } from "../../services/anecdoteService";
 import { Link } from "react-router-dom";
 
+import "../../components/anecdotes/Anecdote.css";
 const AnecdoteList = () => {
   const [anecdotes, setAnecdotes] = useState([]);
 
@@ -18,14 +17,14 @@ const AnecdoteList = () => {
     <div className="anecdote-list-wrap">
       <h3 className="title">Anecdotes</h3>
       <ul className="list-wrap">
-        {anecdotes.map((anecdote) => (
-          <li key={anecdote.id} className="list">
-            <Link to={`/${anecdote.id}`} className="link">
-              {" "}
-              {anecdote.content}{" "}
-            </Link>
-          </li>
-        ))}
+        {anecdotes &&
+          anecdotes.map((anecdote) => (
+            <li key={anecdote.id} className="list">
+              <Link to={`/${anecdote.id}`} className="link">
+                {anecdote.content}
+              </Link>
+            </li>
+          ))}
       </ul>
     </div>
   );

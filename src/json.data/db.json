@@ -1,24 +1,10 @@
 {
   "anecdotes": [
     {
-      "content": "If it hurts, do it more often",
-      "author": "Jez Humble",
-      "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
-      "votes": 10,
-      "id": 1
-    },
-    {
-      "content": "Premature optimization is the root of all evil",
-      "author": "Donald Knuth",
-      "info": "http://wiki.c2.com/?PrematureOptimization",
-      "votes": 21,
-      "id": 2
-    },
-    {
       "content": "Dynamic Data Transfer",
       "author": "James Hurr",
       "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
-      "votes": 19,
+      "votes": 23,
       "id": 8828
     },
     {
@@ -32,14 +18,14 @@
       "content": "Where does it come from?",
       "author": "Author 002",
       "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
-      "votes": 11,
+      "votes": 15,
       "id": 1610
     },
     {
       "content": "Where can I get some?",
       "author": "Author 002",
       "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
-      "votes": 10,
+      "votes": 13,
       "id": 8067
     },
     {
@@ -69,6 +55,20 @@
       "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
       "votes": 8,
       "id": 9970
+    },
+    {
+      "content": "Hello New Anecdote with Custom Hook",
+      "author": "James Paul",
+      "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
+      "votes": 7,
+      "id": 2457
+    },
+    {
+      "content": "Dynamic Transfer Object",
+      "author": "James Paul",
+      "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
+      "votes": 0,
+      "id": 1420
     }
   ]
 }
