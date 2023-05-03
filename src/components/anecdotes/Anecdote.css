@@ -44,3 +44,30 @@
   border-radius: 5px;
   color: white;
 }
+
+.signle-anecdote-wrap {
+  background-color: #f0f0f0;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.vote-wrap {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vote-btn {
+  width: 80px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: orange;
+  color: white;
+}
+
+.vote-count {
+  font-weight: bold;
+}

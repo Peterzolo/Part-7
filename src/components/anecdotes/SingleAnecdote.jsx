@@ -5,12 +5,11 @@ import {
   voteAnecdote,
 } from "../../services/anecdoteService";
 
+import "../../components/anecdotes/Anecdote.css";
+
 const SingleAnecdote = () => {
   const [anecdote, setAnecdote] = useState([]);
   const [votes, setVotes] = useState(0);
-
-  console.log("ANECDOTE", anecdote);
-  console.log("ANECDOTE VOTES", votes);
 
   const params = useParams();
   const id = params.id;
@@ -33,11 +32,11 @@ const SingleAnecdote = () => {
   return (
     <div>
       <h3 className="title">Single Anecdote</h3>
-      <div className="anecdote-wrap">
+      <div className="signle-anecdote-wrap">
         <div className="content">{anecdote.content}</div>
         <div className="vote-wrap">
-          <div className="vote-body">{votes}</div>
-          <h6 className="vote-title">Vote</h6>
+          <h6 className="vote-title">Votes</h6>
+          <div className="vote-count">{votes}</div>
           <button className="vote-btn" onClick={handleVote}>
             Vote
           </button>
