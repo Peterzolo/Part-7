@@ -1,30 +1,16 @@
 import React, { useState } from "react";
+import { createAnecdote } from "../../services/anecdoteService";
 
 const CreateAnecdote = () => {
-  const [anecdotes, setAnecdotes] = useState([
-    {
-      content: "If it hurts, do it more often",
-      author: "Jez Humble",
-      info: "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
-      votes: 0,
-      id: 1,
-    },
-    {
-      content: "Premature optimization is the root of all evil",
-      author: "Donald Knuth",
-      info: "http://wiki.c2.com/?PrematureOptimization",
-      votes: 0,
-      id: 2,
-    },
-  ]);
-
+  const [newAnecdote, setNewAnecdote] = useState(null);
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
   const [info, setInfo] = useState("");
 
   const anecdoteId = Math.round(Math.random() * 10000);
+  console.log("generated id", anecdoteId);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newAnecdoteObject = {
       content,
@@ -33,8 +19,8 @@ const CreateAnecdote = () => {
       votes: 0,
       id: anecdoteId,
     };
-
-    setAnecdotes(anecdotes.concat(newAnecdoteObject));
+    const response = await createAnecdote(newAnecdoteObject);
+    setNewAnecdote(response);
   };
 
   return (

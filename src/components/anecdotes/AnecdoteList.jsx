@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 
 import "../../components/anecdotes/Anecdote.css";
 import { getAllAnecdotes } from "../../services/anecdoteService";
+import { Link } from "react-router-dom";
 
 const AnecdoteList = () => {
   const [anecdotes, setAnecdotes] = useState([]);
-  console.log("ANECDOTES ALL", anecdotes);
 
   useEffect(() => {
     const fetchAllAnecdotes = async () => {
@@ -20,7 +20,7 @@ const AnecdoteList = () => {
       <ul className="list-wrap">
         {anecdotes.map((anecdote) => (
           <li key={anecdote.id} className="list">
-            {anecdote.content}
+            <Link to={`/${anecdote.id}`}> {anecdote.content} </Link>
           </li>
         ))}
       </ul>

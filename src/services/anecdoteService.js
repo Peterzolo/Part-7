@@ -11,3 +11,8 @@ export const getSingleAnecdote = async (id) => {
   const response = await axios.get(`${baseUrl}/${id}`);
   return response.data;
 };
+
+export const createAnecdote = async (anecdoteData) => {
+  const response = await axios.post(baseUrl, anecdoteData);
+  return response.data;
+};

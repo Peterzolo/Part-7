@@ -8,7 +8,6 @@ const SingleAnecdote = () => {
 
   const params = useParams();
   const id = params.id;
-  console.log("ANECDOTE ID", id);
 
   useEffect(() => {
     const fetchData = async () => {
