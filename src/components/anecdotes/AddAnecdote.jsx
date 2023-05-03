@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import { createAnecdote } from "../../services/anecdoteService";
 import { useNavigate } from "react-router-dom";
 import Notification from "../notification/Notification";
-import { useInputField } from "../../hooks";
+import { useField } from "../../hooks";
 
 const CreateAnecdote = () => {
   const [newAnecdote, setNewAnecdote] = useState(null);
-  // const [content, setContent] = useState("");
-  // const [author, setAuthor] = useState("");
-  // const [info, setInfo] = useState("");
-  const content = useInputField("");
-  const author = useInputField("");
-  const info = useInputField("");
+  const content = useField("");
+  const author = useField("");
+  const info = useField("");
 
   const navigate = useNavigate();
   const [notificationMessage, setNotificationMessage] = useState(null);
