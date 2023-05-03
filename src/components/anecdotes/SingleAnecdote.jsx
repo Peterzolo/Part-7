@@ -8,7 +8,7 @@ import {
 import "../../components/anecdotes/Anecdote.css";
 
 const SingleAnecdote = () => {
-  const [anecdote, setAnecdote] = useState([]);
+  const [anecdote, setAnecdote] = useState({});
   const [votes, setVotes] = useState(0);
 
   const params = useParams();
