@@ -4,22 +4,43 @@
       "content": "If it hurts, do it more often",
       "author": "Jez Humble",
       "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
-      "votes": 7,
+      "votes": 10,
       "id": 1
     },
     {
       "content": "Premature optimization is the root of all evil",
       "author": "Donald Knuth",
       "info": "http://wiki.c2.com/?PrematureOptimization",
-      "votes": 12,
+      "votes": 14,
       "id": 2
     },
     {
       "content": "Dynamic Data Transfer",
       "author": "James Hurr",
       "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
-      "votes": 17,
+      "votes": 19,
       "id": 8828
+    },
+    {
+      "content": "What is Lorem Ipsum?",
+      "author": "Author 003",
+      "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
+      "votes": 12,
+      "id": 2198
+    },
+    {
+      "content": "Where does it come from?",
+      "author": "Author 002",
+      "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
+      "votes": 9,
+      "id": 1610
+    },
+    {
+      "content": "Where can I get some?",
+      "author": "Author 002",
+      "info": "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html",
+      "votes": 10,
+      "id": 8067
     }
   ]
 }

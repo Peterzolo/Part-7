@@ -20,7 +20,10 @@ const AnecdoteList = () => {
       <ul className="list-wrap">
         {anecdotes.map((anecdote) => (
           <li key={anecdote.id} className="list">
-            <Link to={`/${anecdote.id}`}> {anecdote.content} </Link>
+            <Link to={`/${anecdote.id}`} className="link">
+              {" "}
+              {anecdote.content}{" "}
+            </Link>
           </li>
         ))}
       </ul>

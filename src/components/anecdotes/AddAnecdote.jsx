@@ -21,6 +21,7 @@ const CreateAnecdote = () => {
     };
     const response = await createAnecdote(newAnecdoteObject);
     setNewAnecdote(response);
+    setNewAnecdote(null);
   };
 
   return (
