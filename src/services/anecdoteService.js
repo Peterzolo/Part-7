@@ -16,3 +16,11 @@ export const createAnecdote = async (anecdoteData) => {
   const response = await axios.post(baseUrl, anecdoteData);
   return response.data;
 };
+
+export const voteAnecdote = async (anecdoteData) => {
+  const response = await axios.put(
+    `${baseUrl}/${anecdoteData.id}`,
+    anecdoteData
+  );
+  return response.data;
+};
